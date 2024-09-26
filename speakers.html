@@ -21,38 +21,50 @@ image: "/images/logo/arc_logo_coloured.png"
 <!--        </a>-->
 <!--    </div>-->
 <!--</section>-->
-<section class="speakers-section-two" style="margin-top: 0;">
-    <div class="auto-container">
-        <div class="sec-title text-center my-4">
-            <span class="display-4 text-danger font-weight-bold">Speakers</span>
-        </div>
-        <div class="row top-pd-mobile">
-            {% for speaker in site.speakers %}
-            {% if speaker.is_keynote == true %}
-            {% include speaker-block.liquid speaker=speaker designation="Keynote Speaker " %}
-            {% endif %}
-            {% endfor %}
-<!--        </div>-->
 
-<!--        Display Female Speakers-->
-<!--        <div class="row top-pd-mobile">-->
-            {% assign female_speakers = site.speakers | where: "gender", "female" %}
-            {% for speaker in female_speakers %}
-            {% if speaker.is_keynote == false %}
-            {% include speaker-block.liquid speaker=speaker designation="Speaker" %}
-            {% endif %}
-            {% endfor %}
-        </div>
+<section class="schedule-section">
+    <!--Conference Schedule-->
 
-<!--        Display Male Speakers-->
-        <div class="row top-pd-mobile">
-            {% assign male_speakers = site.speakers | where: "gender", "male" %}
-            {% for speaker in male_speakers %}
-            {% if speaker.is_keynote == false %}
-            {% include speaker-block.liquid speaker=speaker designation="Speaker" %}
-            {% endif %}
-            {% endfor %}
+    <div id="event-schedule" class="container mt-3 mb-3">
+        <div class="sec-title" style="text-align: center">
+            <h2 style="color: #c11803">Conference Schedule</h2>
         </div>
     </div>
+    <h2 class="text-center" style="color: #171414">TBA</h2>
 </section>
-<!-- End Speakers Section -->
+
+<!--<section class="speakers-section-two" style="margin-top: 0;">-->
+<!--    <div class="auto-container">-->
+<!--        <div class="sec-title text-center my-4">-->
+<!--            <span class="display-4 text-danger font-weight-bold">Speakers</span>-->
+<!--        </div>-->
+<!--        <div class="row top-pd-mobile">-->
+<!--            {% for speaker in site.speakers %}-->
+<!--            {% if speaker.is_keynote == true %}-->
+<!--            {% include speaker-block.liquid speaker=speaker designation="Keynote Speaker " %}-->
+<!--            {% endif %}-->
+<!--            {% endfor %}-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        Display Female Speakers&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="row top-pd-mobile">&ndash;&gt;-->
+<!--            {% assign female_speakers = site.speakers | where: "gender", "female" %}-->
+<!--            {% for speaker in female_speakers %}-->
+<!--            {% if speaker.is_keynote == false %}-->
+<!--            {% include speaker-block.liquid speaker=speaker designation="Speaker" %}-->
+<!--            {% endif %}-->
+<!--            {% endfor %}-->
+<!--        </div>-->
+
+<!--&lt;!&ndash;        Display Male Speakers&ndash;&gt;-->
+<!--        <div class="row top-pd-mobile">-->
+<!--            {% assign male_speakers = site.speakers | where: "gender", "male" %}-->
+<!--            {% for speaker in male_speakers %}-->
+<!--            {% if speaker.is_keynote == false %}-->
+<!--            {% include speaker-block.liquid speaker=speaker designation="Speaker" %}-->
+<!--            {% endif %}-->
+<!--            {% endfor %}-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End Speakers Section &ndash;&gt;-->
