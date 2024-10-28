@@ -47,16 +47,18 @@
                             </li>
                             <li {% if page.url contains "/about-us" %}class="current" {%endif%}><a href="/about-us">About</a>
                             </li>
-                            <li class="dropdown {% if page.url == "/speakers" %} current {% endif %}"><a href="/speakers.html">Speakers</a>
-                            <ul>
-                                <li><a href="speakers.html">Speakers</a></li>
+                             <li {% if page.url contains "/speakers" %}class="current" {%endif%}><a href="/speakers">Speakers</a>
+                            </li>
+                            {% comment %}<li class="dropdown {% if page.url == "/speakers" %} current {% endif %}"><a href="/speakers.html">Speakers</a>{% endcomment %}
+                            {% comment %}<ul>{% endcomment %}
+                                {% comment %}<li><a href="speakers.html">Speakers</a></li>{% endcomment %}
                                 {% comment %}<li><a{% endcomment %}
                                         {% comment %}href="https://www.papercall.io/rubyminiconfafrica2024"{% endcomment %}
                                         {% comment %}target="_blank" style="visibility: hidden;"{% endcomment %}
                                 {% comment %}>CFP</a{% endcomment %}
                                 {% comment %}></li>{% endcomment %}
-                            </ul>
-                            </li>
+                            {% comment %}</ul>{% endcomment %}
+                            {% comment %}</li>{% endcomment %}
 
                             {% comment %}<li {% if page.url=="/tickets" %}class="current" {%endif%}><a href="/tickets">Tickets</a>{% endcomment %}
                             {% comment %}</li>{% endcomment %}
