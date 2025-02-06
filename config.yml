@@ -30,7 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
                       <b>“Agile, Open Source & Entrepreneurship”</b>. The
                       objective of the conference is to:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rubyconf.africa" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://judahsan.github.io/conf-2025-test" # the base hostname & protocol for your site, e.g. http://example.com
 
 gitlab_username: nairuby
 github_username: nairuby
