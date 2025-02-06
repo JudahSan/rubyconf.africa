@@ -1,0 +1,24 @@
+# _data/speakers.yml
+- name: "Bernard Banta"
+  designation: "Co-Founder Finplus"
+  image: "/img/speakers/banta.jpg"
+  twitter: "https://twitter.com/Bantab"
+  linkedin: "https://www.linkedin.com/in/banta"
+
+- name: "FH Ndiritu"
+  designation: "Software Engineer"
+  image: "/img/speakers/francis.jpg"
+  twitter: "https://x.com/fh_ndiritu"
+  linkedin: "https://www.linkedin.com/in/francis-karuri"
+
+- name: "Kipngetich Ngeno"
+  designation: "Fullstack Software Engineer"
+  image: "/img/speakers/kip.jpeg"
+  twitter: "https://x.com/vinnieSlain"
+  linkedin: "https://www.linkedin.com/in/kipngetich-ngeno-178451121/"
+
+- name: "FH Ndirity"
+  designation: "Software Engineer"
+  image: "/img/speakers/francis.jpg"
+  twitter: "https://x.com/fh_ndiritu"
+  linkedin: "https://www.linkedin.com/in/francis-karuri"
