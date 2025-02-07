@@ -12,6 +12,18 @@
 
     });
 
+    // Currency
+    $("#currency").change(function() {
+        var selectedCurrency = $(this).val();
+
+        $(".amount").each(function() {
+            var newPrice = $(this).data(selectedCurrency);
+            $(this).text(newPrice);
+        });
+
+        $(".cur").text(selectedCurrency === "kes" ? "KSh" : "$");
+    })
+
 
     // Scroll to
 

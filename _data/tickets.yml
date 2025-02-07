@@ -1,0 +1,29 @@
+tickets:
+  - type: "Student Pass"
+    price:
+      usd: 30
+      kes: 3225
+    perks:
+      - "2-Day Conference"
+      - "Networking Party"
+      - "Limited areas access"
+    active: true
+  - type: "Group Pass"
+    price:
+      usd: 180
+      kes: 22573
+    perks:
+      - "2-Day Conference"
+      - "Group of 5"
+      - "Access to all areas"
+      - "Networking party"
+    active: false
+  - type: "Normal Pass"
+    price:
+      usd: 50
+      kes: 5160
+    perks:
+      - "2-Day Conference"
+      - "Access to all areas"
+      - "Networking party"
+    active: false

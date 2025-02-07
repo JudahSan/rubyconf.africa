@@ -1,0 +1,28 @@
+<div class="col-sm-8">
+    <div class="row">
+        {% for ticket in site.data.tickets.tickets %}
+        <div class="col-sm-4">
+            <ul class="block-tickets overlap">
+                <li>
+                    <ul class="block-ticket {% if ticket.active %}active{% endif %}">
+                        <li class="block-price">
+                            <span class="price">
+                                <span class="cur">$</span> {{ ticket.price.usd }}
+                                {% comment %}<span class="amount" data-usd="{{ ticket.price.usd }}"{% endcomment %}
+                                    {% comment %}data-kes="{{ ticket.price.kes }}">{% endcomment %}
+                                    {% comment %}{{ ticket.price.usd }}{% endcomment %}
+                                {% comment %}</span>{% endcomment %}
+                            </span>
+                            <span class="block-type">{{ ticket.type }}</span>
+                        </li>
+                        {% for perk in ticket.perks %}
+                        <li>{{ perk }}</li>
+                        {% endfor %}
+                        <li><a href="#" class="but mt-30"> Buy Ticket Now</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
