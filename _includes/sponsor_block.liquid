@@ -1,0 +1,29 @@
+{% assign platinum_sponsors = site.data.sponsors | where: "categories", "platinum" %}
+{% assign silver_sponsors = site.data.sponsors | where: "categories", "silver" %}
+{% assign partners = site.data.sponsors | where: "categories", "partner" %}
+
+<section class="sponsor pt-100 pb-100">
+    <div class="container text-center">
+        <h1 class="title">Bigup to Our Sponsors</h1>
+        <p class="title-lead mt-10 mb-20">For further info about sponsoring, feel free to get in touch with us</p>
+        
+        {% for category in "platinum,silver,partner" | split: "," %}
+            {% assign sponsors = site.data.sponsors | where_exp: "item", "item.categories contains category" %}
+            
+            {% if sponsors.size > 0 %}
+                <h3 class="sub-title-0 mt-50 mb-20 gradient-text">{{ category | capitalize }} Sponsors</h3>
+                <div class="row justify-content-center">
+                    {% for sponsor in sponsors %}
+                        <div class="col-md-2 col-sm-4 mb-4">
+                            <div class="block-sponsor">
+                                <a href="{{ sponsor.url }}" target="_blank">
+                                    <img src="{{ sponsor.image }}" alt="{{ sponsor.alt | default: sponsor.name }}">
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
