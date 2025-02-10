@@ -13,11 +13,11 @@ accommodations:
     image: "./img/accommodation/goldentulip.jpeg"
     location_url: "https://maps.app.goo.gl/cRQrPUfyqvaKUmvH9"
 
-transport:
-  - title: "Air Transport"
-    description: "Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem quam tu in nos omnes iam diu machinaris ac vitamus."
-    image: "img/10.jpg"
-
-  - title: "Ground Transport"
-    description: "Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem quam tu in nos omnes iam diu machinaris ac vitamus."
-    image: "img/11.jpg"
+#transport:
+#  - title: "Air Transport"
+#    description: "Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem quam tu in nos omnes iam diu machinaris ac vitamus."
+#    image: "img/10.jpg"
+#
+#  - title: "Ground Transport"
+#    description: "Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem quam tu in nos omnes iam diu machinaris ac vitamus."
+#    image: "img/11.jpg"

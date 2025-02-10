@@ -1,40 +1,45 @@
 <!--Header-->
-            <header class="header">
-               <!--Container-->
-               <div class="container ">
-                  <!--Row-->
-                  <div class="row">
-                     <div class="col-md-2">
-                        <a class="scroll logo" href="#wrapper">
-                           <img
-                            src="{{'/img/logo/arclogo.png' | prepend: site.baseurl}}"
-                            alt="Africa Ruby Community - Building a vibrant Ruby community in Africa"
-                            title=""
-                    />                      </a>
-                     </div>
-                     <div class="col-md-10 text-right">
-                        <nav class="main-nav">
-                           <div class="toggle-mobile-but">
-                              <a href="#" class="mobile-but" >
-                                 <div class="lines"></div>
-                              </a>
-                           </div>
-                           <ul>
-                              <li><a class="scroll" href="#wrapper">Home</a></li>
-                              <li><a class="scroll" href="#about">About</a></li>
-                              <li><a class="scroll" href="#speakers">Speakers</a></li>
-                              <li><a class="scroll" href="#topics">Topics</a></li>
-                              <li><a class="scroll" href="#schedule">Schedule</a></li>
-                              <li><a class="scroll" href="#tickets">Tickets</a></li>
-                              <li><a class="scroll" href="#location">Location</a></li>
-                              <li><a class="scroll" href="#faq">FAQ</a></li>
-                              <li><a class="scroll" href="#gallery">Gallery</a></li>
-                           </ul>
-                        </nav>
-                     </div>
-                  </div>
-                  <!--End row-->
-               </div>
-               <!--End container-->
-            </header>
-            <!--End header-->
+<header class="header">
+  <!--Container-->
+  <div class="container">
+    <!--Row-->
+    <div class="row">
+      <div class="col-md-2">
+        <a class="scroll logo" href="#wrapper">
+          <img
+            src="{{ '/img/logo/arclogo.png' | prepend: site.baseurl }}"
+            alt="Africa Ruby Community - Building a vibrant Ruby community in Africa"
+            title=""
+          />
+        </a>
+      </div>
+      <div class="col-md-10 text-right">
+        <nav class="main-nav">
+          <div class="toggle-mobile-but">
+            <a href="#" class="mobile-but">
+              <div class="lines"></div>
+            </a>
+          </div>
+          <ul>
+            <li><a class="scroll" href="#wrapper">Home</a></li>
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#speakers">Speakers</a></li>
+            {% comment %}
+            <li><a class="scroll" href="#topics">Topics</a></li>
+            {% endcomment %}
+            <li><a class="scroll" href="#schedule">Schedule</a></li>
+            {% comment %}
+            <li><a class="scroll" href="#tickets">Tickets</a></li>
+            {% endcomment %}
+            {% comment %}<li><a class="scroll" href="#location">Location</a></li>{% endcomment %}
+            <li><a class="scroll" href="#faq">FAQ</a></li>
+            <li><a class="scroll" href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--End row-->
+  </div>
+  <!--End container-->
+</header>
+<!--End header-->

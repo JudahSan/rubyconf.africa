@@ -1,0 +1,27 @@
+faqs:
+  - question: "What is RubyConf Africa 2025 all about?"
+    answer: "RubyConf Africa 2025 is a conference dedicated to the Ruby programming language and its ecosystem. It brings together developers, enthusiasts, and industry experts to share knowledge, explore best practices, and celebrate the Ruby community."
+
+  - question: "When and where will RubyConf Africa 2025 take place?"
+    answer: "RubyConf Africa 2025 will be held from July 18th to 19th, 2025, at KCA University - Main Campus, Ruaraka, Thika Road, Exit 5, in Nairobi, Kenya."
+
+  - question: "Is there a registration fee for RubyConf Africa 2025?"
+    answer: "While we're excited to host this event, please note that we are unable to cover speaker expenses.  We are working to keep registration fees as low as possible for attendees, and details will be announced soon." # Modified to reflect speaker expense situation.
+
+  - question: "What kind of topics will be covered at RubyConf Africa 2025?"
+    answer: "The conference will cover a wide range of topics related to Ruby, including (but not limited to) Ruby on Rails, web development, software architecture, testing, DevOps, Agile methodologies, open-source contributions, community building, career development, and emerging technologies."
+
+  - question: "How can I submit a talk proposal for RubyConf Africa 2025?"
+    answer: "We encourage prospective speakers to submit their Call for Proposals (CFPs)!  Details on how to submit will be available on our website [insert website link here] soon.  This is a fantastic opportunity to share your expertise with the Ruby community."
+
+  - question: "Will there be workshops or training sessions at RubyConf Africa 2025?"
+    answer: "We are planning to have masterclasses and/or workshops.  More details will be announced on our website as they are finalized."
+
+  - question: "How can I stay updated on the latest news and announcements about RubyConf Africa 2025?"
+    answer: "The best way to stay informed is to follow us on our social media channels [insert social media links here] and subscribe to our mailing list [insert mailing list signup link here].  We will also be regularly updating our website [insert website link here] with the latest information."
+
+  - question: "Who is organizing RubyConf Africa 2025?"
+    answer: "RubyConf Africa 2025 is being organized by African Ruby Community."  # Add this if applicable.
+
+  - question: "How can I contact the organizers of RubyConf Africa 2025?"
+    answer: "You can reach us by email at organisers@rubyconf.africa."

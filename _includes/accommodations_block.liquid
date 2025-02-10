@@ -1,37 +1,49 @@
 <div class="container">
-    <div class="row">
-        {% for hotel in site.data.accommodations.accommodations %}
-        <div class="col-sm-4 {% if forloop.first %}col-sm-offset-2{% endif %} text-center">
-            <div class="block-img">
-                <div class="background-img">
-                    <img alt="{{ hotel.name }}" src="{{ hotel.image }}" style="display: none;">
-                </div>
-            </div>
-            <p class="mt-30">
-                {{ hotel.name }} <br>
-                {{ hotel.address }}<br>
-                {{ hotel.city }}<br>
-                {{ hotel.phone }}
-            </p>
-            <a href="{{ hotel.location_url }}" class="link gradient-text mt-30">
-                Location
-            </a>
+  <div class="row">
+    {% for hotel in site.data.accommodations.accommodations %}
+    <div
+      class="col-sm-4 {% if forloop.first %}col-sm-offset-2{% endif %} text-center"
+    >
+      <div class="block-img">
+        <div class="background-img">
+          <img
+            alt="{{ hotel.name }}"
+            src="{{ hotel.image }}"
+            style="display: none"
+          />
         </div>
-        {% endfor %}
+      </div>
+      <p class="mt-30">
+        {{ hotel.name }} <br />
+        {{ hotel.address }}<br />
+        {{ hotel.city }}<br />
+        {{ hotel.phone }}
+      </p>
+      <a href="{{ hotel.location_url }}" class="link gradient-text mt-30">
+        Location
+      </a>
     </div>
-    <!--End row-->
-    <div class="row mt-100">
-        {% for transport in site.data.accommodations.transport %}
-        <div class="col-sm-4 {% if forloop.first %}col-sm-offset-2{% endif %} text-center">
-            <div class="block-img">
-                <div class="background-img">
-                    <img alt="{{ transport.title }}" src="{{ transport.image }}" style="display: none;">
-                </div>
-            </div>
-            <h2 class="sub-title-2 mt-30">{{ transport.title }}</h2>
-            <p class="mt-10">{{ transport.description }}</p>
+    {% endfor %}
+  </div>
+  <!--End row-->
+  <div class="row mt-100">
+    {% for transport in site.data.accommodations.transport %}
+    <div
+      class="col-sm-4 {% if forloop.first %}col-sm-offset-2{% endif %} text-center"
+    >
+      <div class="block-img">
+        <div class="background-img">
+          <img
+            alt="{{ transport.title }}"
+            src="{{ transport.image }}"
+            style="display: none"
+          />
         </div>
-        {% endfor %}
+      </div>
+      <h2 class="sub-title-2 mt-30">{{ transport.title }}</h2>
+      <p class="mt-10">{{ transport.description }}</p>
     </div>
-    <!--End row-->
+    {% endfor %}
+  </div>
+  <!--End row-->
 </div>

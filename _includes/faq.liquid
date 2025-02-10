@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+    <h1 class="title">Frequently Asked Questions</h1>
+    <p class="title-lead mt-10 mb-20">
+      Some frequently asked questions for you.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="block-faq mb-50">
+      {% for faq in site.data.faq.faqs %}
+      <h4 class="mb-10">{{ faq.question }}</h4>
+      <p class="mb-30">{{ faq.answer }}</p>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
