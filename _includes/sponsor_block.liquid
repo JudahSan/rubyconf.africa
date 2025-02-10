@@ -10,7 +10,8 @@
       For further info about sponsoring, feel free to get in touch with us
     </p>
 
-    {% for category in "platinum,silver,partner" | split: "," %} {% assign
+    {% assign categories = "platinum,silver,partner" | split: "," %}
+    {% for category in categories %} {% assign
     sponsors = site.data.sponsors | where_exp: "item", "item.categories contains
     category" %} {% if sponsors.size > 0 %}
     <h3 class="sub-title-0 mt-50 mb-20 gradient-text">
