@@ -1,0 +1,23 @@
+accommodations:
+  - name: "PrideInn"
+    address: "Westlands Road, Westlands Nairobi"
+    city: "Nairobi, Kenya"
+    phone: "+ 254 709 532 000"
+    image: "./img/accommodation/prideinn.jpeg"
+    location_url: "https://maps.app.goo.gl/9kPsSRHgBPaRAd21A"
+
+  - name: "Golden Tulip Westlands"
+    address: "Westlands Road, Westlands Nairobi"
+    city: "Nairbi, Kenya"
+    phone: "+254 204034000"
+    image: "./img/accommodation/goldentulip.jpeg"
+    location_url: "https://maps.app.goo.gl/cRQrPUfyqvaKUmvH9"
+
+transport:
+  - title: "Air Transport"
+    description: "Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem quam tu in nos omnes iam diu machinaris ac vitamus."
+    image: "img/10.jpg"
+
+  - title: "Ground Transport"
+    description: "Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem quam tu in nos omnes iam diu machinaris ac vitamus."
+    image: "img/11.jpg"

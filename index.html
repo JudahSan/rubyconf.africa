@@ -669,7 +669,7 @@ title: "Ruby Africa 2025: Innovate. Commercialize. Transform with Ruby"
       <!--Container-->
       <div class="container">
          <!--Row-->
-         <div class="row">
+         <div class="row" style="visibility: hidden">
             <div class="col-sm-8 col-sm-offset-2 mb-50 text-center ">
                <h1 class="title">Bigup to Our Sponsors </h1>
                <p class="title-lead mt-10 mb-20">For further info about sponsoring feel free to get in touch with us</p>
@@ -682,7 +682,7 @@ title: "Ruby Africa 2025: Innovate. Commercialize. Transform with Ruby"
       <section class="sponsor pt-100 pb-100">
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 mb-50 text-center">
+      <div class="col-sm-8 col-sm-offset-2 mt-50 mb-50 text-center">
         <h1 class="title">Bigup to Our Sponsors</h1>
         <p class="title-lead mt-10 mb-20">
           For further info about sponsoring, feel free to get in touch with us.
@@ -698,7 +698,7 @@ title: "Ruby Africa 2025: Innovate. Commercialize. Transform with Ruby"
       {% if sponsors.size > 0 %}
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h3 class="sub-title-0 mb-20">
+            <h3 class="sub-title-0 mt-50 mb-50">
               <span class="gradient-text">{{ category | capitalize }} Sponsors</span>
             </h3>
           </div>
@@ -733,18 +733,13 @@ title: "Ruby Africa 2025: Innovate. Commercialize. Transform with Ruby"
          <!--Row-->
          <div class="row">
             <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7">
-               <h1 class="title">Contact Info </h1>
-               <p class="title-lead mt-10 mb-50">Dear guests, you are welcomed to dine with us at Tasty restaurant. Have
-                  a pleasant dining experience. </p>
+               <h1 class="title">Get in Touch </h1>
+               <p class="title-lead mt-10 mb-50">For inquiries about RubyConf Africa, please contact us. </p>
             </div>
             <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7">
                <div class="block-info-3">
                   <p>
-                     3805 Edwards Rd <br>
-                     Cincinnati, OH 45209 USA<br><br>
-                     Phone: (513) 352-3209 <br>
-                     Fax: (513) 352-6220 <br>
-                     Email : <a href="mailto:contact@events.com" class="gradient-text">contact@events.com</a>
+                     Email : <a href="mailto:organisers@rubyconf.africa" class="gradient-text">organisers@rubyconf.africa</a>
                   </p>
                </div>
             </div>
@@ -770,66 +765,67 @@ title: "Ruby Africa 2025: Innovate. Commercialize. Transform with Ruby"
       </div>
       <!--End container-->
       <!--Container-->
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-4 col-sm-offset-2 text-center">
-               <div class="block-img">
-                  <div class="background-img">
-                     <img alt="" src="img/8.jpg" style="display: none;">
-                  </div>
-               </div>
-               <p class="mt-30">Hotel Monaco <br>
-                  501 Geary Street<br>
-                  San Franciscio, California<br>
-                  (415) 292 - 0100
-               </p>
-               <a href="#" class="link gradient-text mt-30">
-                  Location
-               </a>
-            </div>
-            <div class="col-sm-4 text-center">
-               <div class="block-img">
-                  <div class="background-img">
-                     <img alt="" src="img/9.jpg" style="display: none;">
-                  </div>
-               </div>
-               <p class=" mt-30 ">Hotel Nikko<br>
-                  222 Mason Street<br>
-                  San Franciscio, California<br>
-                  (415) 394 - 1111
-               </p>
-               <a href="#" class="link gradient-text mt-30">
-                  Location
-               </a>
-            </div>
-         </div>
-         <!--End row-->
-         <div class="row mt-100">
-            <div class="col-sm-4 col-sm-offset-2 text-center">
-               <div class="block-img">
-                  <div class="background-img">
-                     <img alt="" src="img/10.jpg" style="display: none;">
-                  </div>
-               </div>
-               <h2 class="sub-title-2 mt-30">Air Transport</h2>
-               <p class="mt-10">Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem
-                  quam tu in nos omnes iam diu machinaris ac vitamus.
-               </p>
-            </div>
-            <div class="col-sm-4 text-center">
-               <div class="block-img">
-                  <div class="background-img">
-                     <img alt="" src="img/11.jpg" style="display: none;">
-                  </div>
-               </div>
-               <h2 class="sub-title-2 mt-30">Ground Transport</h2>
-               <p class=" mt-10 ">Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri
-                  pestem quam tu in nos omnes iam diu machinaris ac vitamus.
-               </p>
-            </div>
-         </div>
-         <!--End row-->
-      </div>
+      {% include accommodations_block.liquid %}
+<!--      <div class="container">-->
+<!--         <div class="row">-->
+<!--            <div class="col-sm-4 col-sm-offset-2 text-center">-->
+<!--               <div class="block-img">-->
+<!--                  <div class="background-img">-->
+<!--                     <img alt="" src="img/8.jpg" style="display: none;">-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--               <p class="mt-30">Hotel Monaco <br>-->
+<!--                  501 Geary Street<br>-->
+<!--                  San Franciscio, California<br>-->
+<!--                  (415) 292 - 0100-->
+<!--               </p>-->
+<!--               <a href="#" class="link gradient-text mt-30">-->
+<!--                  Location-->
+<!--               </a>-->
+<!--            </div>-->
+<!--            <div class="col-sm-4 text-center">-->
+<!--               <div class="block-img">-->
+<!--                  <div class="background-img">-->
+<!--                     <img alt="" src="img/9.jpg" style="display: none;">-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--               <p class=" mt-30 ">Hotel Nikko<br>-->
+<!--                  222 Mason Street<br>-->
+<!--                  San Franciscio, California<br>-->
+<!--                  (415) 394 - 1111-->
+<!--               </p>-->
+<!--               <a href="#" class="link gradient-text mt-30">-->
+<!--                  Location-->
+<!--               </a>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--         &lt;!&ndash;End row&ndash;&gt;-->
+<!--         <div class="row mt-100">-->
+<!--            <div class="col-sm-4 col-sm-offset-2 text-center">-->
+<!--               <div class="block-img">-->
+<!--                  <div class="background-img">-->
+<!--                     <img alt="" src="img/10.jpg" style="display: none;">-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--               <h2 class="sub-title-2 mt-30">Air Transport</h2>-->
+<!--               <p class="mt-10">Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri pestem-->
+<!--                  quam tu in nos omnes iam diu machinaris ac vitamus.-->
+<!--               </p>-->
+<!--            </div>-->
+<!--            <div class="col-sm-4 text-center">-->
+<!--               <div class="block-img">-->
+<!--                  <div class="background-img">-->
+<!--                     <img alt="" src="img/11.jpg" style="display: none;">-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--               <h2 class="sub-title-2 mt-30">Ground Transport</h2>-->
+<!--               <p class=" mt-10 ">Ad mortem te, Catalina, duci iussu consulis iam pridem oportebat, in te conferri-->
+<!--                  pestem quam tu in nos omnes iam diu machinaris ac vitamus.-->
+<!--               </p>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--         &lt;!&ndash;End row&ndash;&gt;-->
+<!--      </div>-->
       <!--End container-->
    </section>
    <!--End accom section-->
