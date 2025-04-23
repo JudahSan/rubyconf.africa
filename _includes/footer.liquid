@@ -13,41 +13,47 @@
                         >
                             <div class="footer-widget about-widget">
                                 <div class="logo">
-                                    <a href="index.html"
+                                    <a href="{{ site.baseurl }}/index.html"
                                     ><img
                                             src="{{'/images/logo/arclogo.png' | prepend: site.baseurl }}"
                                             class="lazyload"
                                             alt="Africa Ruby Community Logo - Building a vibrant Ruby community in Africa"
+                                            width="200"
+                                            height="50"
+                                            loading="lazy"
                                     /></a>
                                 </div>
-                                {% comment %}<div class="text">{% endcomment %}
-                                    {% comment %}<p>{% endcomment %}
-                                        {% comment %}Join us on the 26th to 27th July 2024, as leading Ruby{% endcomment %}
-                                        {% comment %}developers from around the world come together in{% endcomment %}
-                                        {% comment %}Nairobi, Kenya, to share, inspire, and learn.{% endcomment %}
-                                    {% comment %}</p>{% endcomment %}
-                                {% comment %}</div>{% endcomment %}
+                                <div class="text">
+                                    <p>
+                                        Join us on the 18th to 19th July 2025, as leading Ruby
+                                        developers from around the world come together in
+                                        Nairobi, Kenya, to share, inspire, and learn.
+                                    </p>
+                                </div>
                                 <ul class="social-icon-one social-icon-colored">
                                     <li>
                                         <a
                                                 href="https://web.facebook.com/rubycommunity.africa"
-                                        ><i class="fab fa-facebook-f"></i
-                                        ></a>
+                                                aria-label="Visit our Facebook page"
+                                        ><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/ruby_african"
-                                        ><i class="fa-brands fa-x-twitter"></i
-                                        ></a>
+                                        <a
+                                                href="https://twitter.com/ruby_african"
+                                                aria-label="Visit our Twitter page"
+                                        ><i class="fa-brands fa-x-twitter"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/83046693"
-                                        ><i class="fab fa-linkedin"></i
-                                        ></a>
+                                        <a
+                                                href="https://www.linkedin.com/company/83046693"
+                                                aria-label="Visit our LinkedIn page"
+                                        ><i class="fab fa-linkedin"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/@nairubyorg7626"
-                                        ><i class="fab fa-youtube"></i
-                                        ></a>
+                                        <a
+                                                href="https://www.youtube.com/@nairubyorg7626"
+                                                aria-label="Visit our YouTube channel"
+                                        ><i class="fab fa-youtube"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -60,7 +66,7 @@
                               <ul class="user-links">
                                 <li><a href="/index">Home</a></li>
                                 <li><a href="/about-us">About Us</a></li>
-                                <li><a href="/speakers">Speakers</a></li>
+                                <li style="display: none"><a href="/speakers">Speakers</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
                                 <li><a href="/tickets">Tickets</a></li>
                                 <li>
@@ -91,14 +97,6 @@
                               <div class="text">
                                 <a href="mailto:organisers@rubyconf.africa"
                                    >organisers@rubyconf.africa</a
-                                 >
-                              </div>
-                            </li>
-                            <li>
-                              <span class="icon flaticon-paper-plane"></span>
-                              <div class="text">
-                                <a href="mailto:sponsors@rubyconf.africa"
-                                   >sponsors@rubyconf.africa</a
                                  >
                               </div>
                             </li>

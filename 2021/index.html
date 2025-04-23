@@ -36,18 +36,7 @@ year: 2021
           <ul class="info-list">
             <li><span class="fa fa-map-marker-alt"></span> Virtual</li>
           </ul>
-          <div class="btn-align">
-            <div
-              class="banner-text d-flex align-items-center text-bg-danger text-center py-3"
-            >
-              <div class="container">
-                <h6 class="display-6">
-                  <i class="fa-solid fa-heart"></i>
-                  <span class="fs-md-5">Thank you for joining us!</span>
-                </h6>
-              </div>
-            </div>
-          </div>
+          {% include thanks-banner.liquid %}
         </div>
       </div>
     </div>
@@ -64,18 +53,7 @@ year: 2021
           <ul class="info-list">
             <li><span class="fa fa-map-marker-alt"></span> Virtual</li>
           </ul>
-          <div class="btn-align">
-            <div
-              class="banner-text d-flex align-items-center text-bg-danger text-center py-3"
-            >
-              <div class="container">
-                <h6 class="display-6">
-                  <i class="fa-solid fa-heart"></i>
-                  <span class="fs-md-5">Thank you for joining us!</span>
-                </h6>
-              </div>
-            </div>
-          </div>
+          {% include thanks-banner.liquid %}
         </div>
       </div>
     </div>
@@ -83,12 +61,6 @@ year: 2021
 </section>
 <!--End Banner Section -->
 
-<!--Archive banner-->
-<span class="fs-md-5"
-  ><a href="/index" class="text-white text-decoration-none">
-    View the current year's conference. This is an archive.
-  </a></span
->
 <!--End Archive banner-->
 <!-- About Section -->
 <section class="about-section">
@@ -141,7 +113,7 @@ year: 2021
       <div
         class="image-column col-lg-6 col-md-12 col-sm-12"
         style="
-          background-image: url('../images/conference.jpg');
+          background-image: url(&quot;../images/conference.jpg&quot;);
           background-size: cover;
           background-position: center;
           height: auto;

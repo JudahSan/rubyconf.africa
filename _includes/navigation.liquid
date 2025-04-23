@@ -9,6 +9,9 @@
                             src="{{'/images/logo/arc_logo_coloured.png' | prepend:site.baseurl}}"
                             alt="Africa Ruby Community Logo - Building a vibrant Ruby community in Africa"
                             title=""
+                            width="200"
+                            height="50"
+                            loading="lazy"
                     /></a>
                 </div>
             </div>
@@ -41,30 +44,28 @@
                             id="navbarSupportedContent"
                     >
                         <ul class="navigation clearfix">
-                            {% comment %}<li><a href="/index">Home</a></li>{% endcomment %}
-                            <li {% if page.url=="/schedule" %}class="current" {%endif%}>
+                            <li style="display: none"><a href="/index">Home</a></li>
+                            <li style="display: none" {% if page.url == "/schedule" %}class="current" {%endif%}>
                                 <a href="/schedule">Schedule</a>
                             </li>
-                            <li {% if page.url=="/about-us" %}class="current" {%endif%}><a href="/about-us">About</a>
+                            <li {% if page.url == "/about-us" %}class="current" {%endif%}><a href="/about-us">About</a>
                             </li>
-                            <li class="dropdown {% if page.url == "/speakers" %} current {% endif %}"><a href="/speakers.html">Speakers</a>
-                            {% comment %}<ul>
+                            <li style="display: none" class="dropdown {% if page.url == "/speakers" %} current {% endif %}"><a href="/speakers.html">Speakers</a>
+                            <ul style="display: none">
                                 <li><a href="speakers.html">Speakers</a></li>
                                 <li><a
                                         href="https://www.papercall.io/rubyconfafrica2024"
                                         target="_blank"
                                 >CFP</a
                                 ></li>
-                            </ul>{% endcomment %}
+                            </ul>
                             </li>
 
-                            {% comment %}<li {% if page.url=="/tickets" %}class="current" {%endif%}><a href="/tickets">Tickets</a>{% endcomment %}
-                            {% comment %}</li>{% endcomment %}
-
-<!--                            <li class="dropdown" {% if page.url=="/practicalities" %} current {% endif %}" ><a href="/practicalities">Attendee Guide</a>-->
+                            <li {% if page.url=="/tickets" %}class="current" {%endif%}><a href="/tickets">Tickets</a>
+                            </li>
                             <li class="dropdown {% if page.url == "/practicalities" %} current {% endif %}"><a href="/practicalities.html">Essentials</a>
                             <ul>
-                                <li {% if page.url=="/code-of-conduct" %}class="current" {%endif%}>
+                                <li {% if page.url == "/code-of-conduct" %}class="current" {%endif%}>
                                     <a href="code-of-conduct.html">Code of Conduct</a>
                                 </li>
                                 <li>
@@ -72,9 +73,9 @@
                                 </li>
                             </ul>
                             </li>
-                            <li {% if page.url=="/blog" %}class="current" {%endif%}><a href="/blog">Blog</a>
+                            <li {% if page.url == "/blog" %}class="current" {%endif%}><a href="/blog">Blog</a>
                             </li>
-                            <li {% if page.url=="/contact" %}class="current" {%endif%}><a href="/contact">Contact</a>
+                            <li {% if page.url == "/contact" %}class="current" {%endif%}><a href="/contact">Contact</a>
                             </li>
                             <li class="dropdown">
                                     <a href="/">Past Events</a>
@@ -100,9 +101,6 @@
                                         <li>
                                             <a href="/2015">2015</a>
                                         </li>
-                                        <li>
-                                            <a href="/">Main Page</a>
-                                        </li>
                                     </ul>
                                 </li>
                         </ul>
@@ -111,7 +109,7 @@
                 <!-- Main Menu End-->
 
                 <!-- Outer box -->
-                <!-- <div class="outer-box">
+                <div class="outer-box">
                   <div class="btn-box">
                     <a
                       href="tickets.html"
@@ -121,7 +119,7 @@
                       <span class="btn-title">Get Tickets</span></a
                     >
                   </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
